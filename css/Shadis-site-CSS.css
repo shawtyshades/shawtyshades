@@ -76,12 +76,10 @@ img {
     gap: 20px;
 }
 @media (max-width:832px){
-    .toolbar img {
-        min-height: 100px;
-        min-width: 100px;
-        padding: 20px;
+    #reset {
+        width: 50px;
+        height: 50px;
     }
-    
     .shadi {
         display: none;
     }
@@ -96,11 +94,6 @@ img {
 
 @media (max-width:1432px) {
     
-    .toolbar img {
-        min-height: 100px;
-        min-width: 100px;
-        padding: 20px;
-    }
 
 
     .shadi {
@@ -146,17 +139,6 @@ img {
         width: auto;
         margin:20px 10px;
         max-width: 100%;
-    }
-
-    #pdfControls{
-        min-height: 85px;
-        min-width: 100px;
-        top: 1350px;
-    }
-
-    #pdfControls button{
-        min-height: 80px;
-        min-width: 80px;
     }
 
 }
