@@ -1,0 +1,161 @@
+<!-- if you are reading this you are snooping around, but hello.
+ ig as a reward, ill let you know that the comic is called military S-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>shawtyshades Comics</title>
+<link rel="icon" type="image/x-icon" href="photos/shadiss.png">
+<!--CSS link-->
+    <link rel="stylesheet" href="css/Shadis site CSS.css">
+
+</head>
+<style>
+        /*Links*/
+        .navbar a {
+            color: aqua;
+            text-decoration: dotted;
+            padding: 14px 20px;
+            display: inline-block;
+            font-family: Arial, sans-serif;
+        }
+        body { 
+            background-image: url("photos/clouds.png");
+            background-size: cover;
+            background-repeat: repeat;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            padding-bottom: 20px;
+        }
+        /*Hover Effect*/
+        .navbar a:hover {
+            background-color:none;
+        }
+        .comicNavSpacer{
+            height: 50px;
+        }
+
+        h1{
+            border-top-style: dashed ;
+            border-bottom-style:dashed ;
+            border-left-style:solid ;
+            border-right-style:solid ;
+
+            color: rgb(119, 119, 230);
+            text-align: center;
+            border-color: rgb(222, 51, 168);
+            background-color: rgb(13, 0, 58);
+            margin-left: 250px;
+            margin-right: 250px;
+            box-shadow: 46px 23px 19px 6px rgba(0, 0, 0, 0.37);
+            border-radius: 10px;
+        }
+        span{
+            color: azure;
+        }
+        button {
+            background-color: aqua;
+            border-radius: 4px;
+        }
+
+</style>
+<body>
+
+   <nav class="navbar">
+        <a href="index.html">
+            <img class="navicons" src="photos/button-88x31.gif" alt="Home shortcut">
+        </a>
+
+        <div class="dropdown">
+            <a href="#" id="menuBtn">Follow Me</a>
+
+            <ul class="dropdown-menu" id = "menu">
+                <li>
+                    <a href="https://www.youtube.com/@shawty_shades"><img class="navicon" src="photos/Youtube_logo.png" alt="YT">
+                    YouTube
+                        </a></li>
+                <li>
+                    <a href="https://shawtyshades.newgrounds.com/"><img class="navicon" src="photos/buttons/ng_tank.png" alt="NG">
+                    NewGrounds
+                        </a></li>
+                <li>
+                    <a href="https://x.com/shawtyshades"><img class="navicon" src="photos/x-twitter-logo-on-black-circle-5694247.png" alt="X">
+                    Twitter/X
+                        </a></li>
+                <li>
+                    <a href="https://www.instagram.com/shawty_shades/"><img class="navicon" src="photos/buttons/Instagram-Logo.png" alt="insta">
+                    Instagram
+                        </a></li>
+
+                <li>
+                    <a href="https://www.tiktok.com/@shawty_shades"><img src="photos/TikTok-Logo-2016-present.png" alt="tiktok">
+                    TikTok
+                </a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    </nav>
+    <div class="comicNavSpacer"></div>
+    <nav class="subnavbar">
+        <a href="Gallery.html">Gallery</a>
+        <a href="Comics.html">Comics</a>
+        
+    </nav>
+
+   
+
+
+<!--h1 will be sorted by series-->
+    <h1>Comics demo</h1>
+
+<div id="chapterList">
+<!--add pdfs here once a chapter is done-->
+<div class="chapter" data-pdf="comic_pdf/test comic 2.pdf">
+        <img src="photos/placeholdeer.png">
+        <p>test comic</p>
+    </div>
+
+
+</div>
+
+
+<!--toolbar for the reader-->
+<div id="comicReader">
+    <button id="closeReader"><img src="photos/buttons/close button.png" alt="close"></button>
+    <div id="pdfControls">
+        <button id="prevPage"><img src="photos/buttons/prev arrow.png" alt="prev"></button>
+        <span>
+            <span id="pageNum">1</span> /
+            <span id="pageCount">0</span>
+        </span>
+        <button id="nextPage"><img src="photos/buttons/next arrow.png" alt="next"></button>
+        <button id="zoomOut"><img src="photos/buttons/zoomout.png" alt="zoomout"></button>
+        <button id="zoomIn"><img src="photos/buttons/zoomin2.png" alt="zoomin"></button>
+    </div>
+    <div id="comicViewer">
+        <canvas id="pdfCanvas"></canvas>
+    </div>
+</div>
+
+
+<!--does the pdf focus, dont touch-->
+<canvas id="pdfCanvas"></canvas>
+
+<div class="chapter" data-pdf="comic_pdf/chapter2.pdf">
+</div>
+
+
+
+<div class = "footer"><link rel="shawtyshades.com" href="https://shawtyshades.com/">shawtyshades.com</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script src="js/dropMenu.js"></script>
+<script src = "js/pdf-comic.js"></script>
+
+</body>
+
+</html>

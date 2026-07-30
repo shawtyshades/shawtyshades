@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>shawtyshades Gallery</title>
+<link rel="icon" type="image/x-icon" href="photos/shadiss.png">
+<!--CSS link-->
+    <link rel="stylesheet" href="css/Shadis site CSS.css">
+</head>
+<style>
+        /*Links*/
+        .navbar a {
+            color: aqua;
+            text-decoration: dotted;
+            padding: 14px 20px;
+            display: inline-block;
+            font-family: Arial, sans-serif;
+        }
+        body { 
+            background-image: url("photos/clouds.png");
+            background-size: cover;
+            background-repeat: repeat;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            padding-bottom: 20px;
+            overflow-y: scroll;
+        }
+        /*Hover Effect*/
+        .navbar a:hover {
+            background-color:none;
+        }
+        .comicNavSpacer{
+            height: 50px;
+        }
+
+</style>
+
+<body>
+
+    <nav class="navbar">
+        <a href="index.html">
+            <img class="navicons" src="photos/button-88x31.gif" alt="Home shortcut">
+        </a>
+
+        <div class="dropdown">
+            <a href="#" id="menuBtn">Follow Me</a>
+
+            <ul class="dropdown-menu" id = "menu">
+                <li>
+                    <a href="https://www.youtube.com/@shawty_shades"><img class="navicon" src="photos/Youtube_logo.png" alt="YT">
+                    YouTube
+                        </a></li>
+                <li>
+                    <a href="https://shawtyshades.newgrounds.com/"><img class="navicon" src="photos/buttons/ng_tank.png" alt="NG">
+                    NewGrounds
+                        </a></li>
+                <li>
+                    <a href="https://x.com/shawtyshades"><img class="navicon" src="photos/x-twitter-logo-on-black-circle-5694247.png" alt="X">
+                    Twitter/X
+                        </a></li>
+                <li>
+                    <a href="https://www.instagram.com/shawty_shades/"><img class="navicon" src="photos/buttons/Instagram-Logo.png" alt="insta">
+                        Instagram
+                        </a></li>
+
+                <li>
+                    <a href="https://www.tiktok.com/@shawty_shades"><img src="photos/TikTok-Logo-2016-present.png" alt="tiktok">
+                    TikTok
+                </a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+<div class="comicNavSpacer"></div>
+    <nav class="subnavbar">
+        <a href="Gallery.html">Gallery</a>
+        <a href="Comics.html">Comics</a>
+        
+    </nav>
+    
+     <div class="gallery">
+        <!--add pics here-->
+        <img loading="lazy" src="photos/garchomp.png" class="thumb">
+        <img loading="lazy" src="photos/smacls.png" class="thumb">
+        <img loading="lazy" src="photos/better ssjsjsat.png" class="thumb">
+        <img loading="lazy" src="photos/4chanillustration.png" class="thumb">
+        <img loading="lazy" src="photos/ssonic.png" class="thumb">
+        <img loading="lazy" src="photos/v vs cancer.png" class="thumb">
+        <img loading="lazy" src="photos/sumipng.png" class="thumb">
+        <img loading="lazy" src="photos/wahtervver.png" class="thumb">
+        <img loading="lazy" src="photos/zapdis.png" class="thumb">
+        <img loading="lazy" src="photos/dsfad.png" class="thumb">
+        <img loading="lazy" src="photos/XSAGA.png" class="thumb">
+        <img loading="lazy" src="photos/sumi val.png" class="thumb">
+        <img loading="lazy" src="photos/tsukasa.png" class="thumb">
+        <img loading="lazy" src="photos/sumi bed lol.png" class="thumb">
+        <img loading="lazy" src="photos/steefen.png" class="thumb">
+        <img loading="lazy" src="photos/sdaa.png" class="thumb">
+     </div>
+
+        <div id="galleryViewer" class="viewer hidden">
+
+        <button id="close">
+        <img src="photos/buttons/close button.png" alt="close" width="48" height="48">
+        </button>
+
+        <div id="viewport">
+        <img id="focusedImage">
+        </div>
+
+    <div class="toolbar">
+        <button id="zoomOut">
+            <img src="photos/buttons/zoomout.png" width="25">
+        </button>
+
+        <button id="zoomIn">
+            <img src="photos/buttons/zoomin2.png" width="25">
+        </button>
+
+        <button id="prev">
+            <img src="photos/buttons/prev arrow.png" width="25">
+        </button>
+
+        <button id="next">
+            <img src="photos/buttons/next arrow.png" width="25">
+        </button>
+
+    </div>
+            <button id="reset">
+            <img src="photos/buttons/reset button.png" width="100">
+        </button>
+
+
+</div>
+<div class = "footer"><link rel="shawtyshades.com" href="https://shawtyshades.com/">shawtyshades.com</div>
+<script src="js/Gallery.js"></script>
+</body>
+</body>
+
+</html>
