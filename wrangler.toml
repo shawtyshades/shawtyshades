@@ -1,6 +1,0 @@
-name = "shawtyshades"
-compatibility_date = "2026-07-24"
-
-[assets]
-directory = "./shawtyshades_web/public"
-not_found_handling = "404-page"
