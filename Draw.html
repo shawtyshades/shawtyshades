@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shawtyshades drawing</title>
+    <link rel="stylesheet" href="css/drawing.css">
+    <link rel="icon" type="image/x-icon" href="photos/shadiss.png">
+</head>
+<style>
+    .containter{
+        display: flex;
+        grid-template-columns: auto auto auto;
+    }
+    body { 
+            background-image: url("photos/gallery background.png");
+            background-size: cover;
+            background-repeat: repeat;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            padding-bottom: 20px;
+        }
+</style>
+<body>
+    <nav class="navbarcanvas">
+        <a href="index.html">
+            <img class="navicons" src="photos/button-88x31.gif" alt="Home shortcut">
+        </a>
+
+        <div class="dropdown">
+            <a href="#" id="menuBtn">Follow Me</a>
+
+            <ul class="dropdown-menu" role = "menu">
+                <li>
+                    <a href="https://www.youtube.com/@shawty_shades"><img class="navicon" src="photos/buttons/Youtube_logo2.png" alt="YT">
+                    YouTube
+                        </a></li>
+                <li>
+                    <a href="https://shawtyshades.newgrounds.com/"><img class="navicon" src="photos/buttons/ng_tank2.png" alt="NG">
+                    NewGrounds
+                        </a></li>
+                <li>
+                    <a href="https://x.com/shawtyshades"><img class="navicon" src="photos/buttons/twittewr.png" alt="X">
+                    Twitter/X
+                        </a></li>
+                <li>
+                    <a href="https://www.instagram.com/shawty_shades/"><img class="navicon" src="photos/buttons/Instagram-Logo2.png" alt="insta">
+                    Instagram
+                        </a></li>
+
+                <li>
+                    <a href="https://www.tiktok.com/@shawty_shades"><img class="navicon" src="photos/buttons/tiktok.png" alt="tiktok">
+                    TikTok
+                </a>
+                </li>
+
+                <li>
+                    <a href="https://ko-fi.com/shawtyshades"><img class="navicon" src="photos/buttons/kofi.png" alt="kofi">
+                    Ko-fi
+                </a>
+                </li>
+                
+            </ul>
+        </div>
+
+    </nav>
+
+    
+
+
+    <div class="field">
+        <canvas id="canvas" width="1000" height="800"></canvas>
+
+    
+<div class="tools">
+            <button onClick="undo()" type="button" class="button">Undo</button>
+            <button onClick="redo()" type="button" class="button">Redo</button>
+            <button onClick="clearCanvas()" class="button">Clear</button>
+            <button onClick="saveImage()" class="button">Save</button>
+
+    <div class=" containter">
+            <div onClick="change_color(this)" class="color-field" style="background: red;"></div>
+            <div onClick="change_color(this)" class="color-field" style="background: blue;"></div>
+            <div onClick="change_color(this)" class="color-field" style="background: green;"></div>
+            <div onClick="change_color(this)" class="color-field" style="background: yellow;"></div>
+            <div onClick="change_color(this)" class="color-field" style="background: pink;"></div>
+            <div onClick="change_color(this)" class="color-field" style="background: purple;"></div>
+            <div onClick="change_color(this)" class="color-field" style="background: lightgreen;"></div>
+            <div onClick="change_color(this)" class="color-field" style="background: orange;"></div>
+            <div onClick="change_color(this)" class="color-field" style="background: black;"></div>
+            <div onClick="change_color(this)" class="color-field" style="background: white;"></div>
+        </div>
+            <input onInput="draw_color = this.value" type="color" style="width: 50px; height: 30px;" class="color-picker">
+
+            
+            <label for="pen-size"></label>
+                <input type="range" id="pen-size" name="pen-range" min="1" max="25" value="2" class="pen-range"
+                onInput="draw_width = this.value"> 
+                <span id="pen-size-value">2</span>
+              
+
+    </div>
+</div>
+
+
+<!--make the drawing app work on mobile devices first-->
+
+
+<script src="js/dropMenu.js"></script>
+<script src="js/drawing.js"></script>
+</body>
+</html>
