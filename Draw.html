@@ -70,7 +70,8 @@
 <div class="overlay" id="overlay">
     <div class="popup">
         <h2>WARNING</h2>
-        <p>This drawing app may not be formatted/calibrated correctly for mobile devices (such as phones or tablets)<br> It is recommended to use a desktop browser for the best experience.</p>
+        <p>This drawing app may not be formatted/calibrated correctly for mobile devices (such as phones or tablets)<br> It is recommended to use a desktop browser for the best experience.<br> Also, I still have
+        to add an eraser and fill tools, so... yeah</p>
         <button class="popupCloseBtn" id="closePopup">Close</button>
     </div>
 </div>
@@ -100,20 +101,13 @@
         </div>
             <input onInput="draw_color = this.value" type="color" style="width: 50px; height: 30px;" class="color-picker">
 
-            
             <label for="pen-size"></label>
                 <input type="range" id="pen-size" name="pen-range" min="1" max="25" value="2" class="pen-range"
                 onInput="draw_width = this.value"> 
                 <span id="pen-size-value">2</span>
-              
-
     </div>
 </div>
 
-
-
-
-<!--make the drawing app work on mobile devices first-->
 
 
 <script src="js/dropMenu.js"></script>
