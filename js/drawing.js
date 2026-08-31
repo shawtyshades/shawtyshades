@@ -21,7 +21,6 @@ function change_color(element) {
     draw_color = element.style.background;
 
 }
-//add pen pressure later using https://developer-docs.wacom.com/docs/icbt/web/web-api-overview/
 
 canvas.addEventListener("pointerdown", start, false);
 canvas.addEventListener("pointermove", draw, false);
