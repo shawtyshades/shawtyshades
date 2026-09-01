@@ -5,88 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>shawtyshades Updates</title>
     <link rel="icon" type="image/x-icon" href="photos/shadiss.png">
-    <link rel="stylesheet" href="css/Shadis-site-CSS.css">
+    <link rel="stylesheet" href="css/updates.css">
+    <link rel="stylesheet" href="https://unpkg.com/7.css">
 </head>
 <body>
     <style>
-        /*Links*/
-        .navbar a {
-            color: aqua;
-            text-decoration: dotted;
-            padding: 14px 20px;
-            display: inline-block;
-            font-family: Arial, sans-serif;
-        }
+
         body {
-            background-image: url("photos/clouds.png");
+            background-image: url("photos\\temp-updates-bkgrd.png");
             background-size: cover;
-            background-repeat: no-repeat;
             background-position: center;
             height: 100vh;
             margin: 0;
             overflow-y: scroll;
+            position: relative;
+            padding: 10px 0;
+            font-family: Arial, Helvetica, sans-serif;
+            z-index: 10;
         }
+        
 
-        body::before{
-            content: "";
-            position: fixed;
-            inset: 0;
-            background: inherit;
-            transform: scaleX(-1);
-            z-index: -1;
-        }
-        /*Hover Effect*/
-        .navbar a:hover {
-            background-color:none;
-        }
-        .comicNavSpacer{
-            height: 50px;
-        }
-
-        h1{
-            border-style: solid;
-            border-color: black;
-            border-width: 2px;
-            background-color: rgba(0, 0, 0, 0.414);
-            margin: 0px;
-            font-size: 46px;
-            color: rgb(19, 177, 122);
-            text-shadow: -2px -2px 10px #000;
-            text-align: center;
-            border-radius: 3px;
-            padding: 5px;
-            max-width: 900px;
-            margin: 0 auto;
-           
-        }
-
-        h2{
-            max-width: 900px;
-            margin: 0px auto;
-            font-size: 36px;
-            border: 2px; 
-            padding:10px;
-            border-style:solid;
-            color: rgb(38, 248, 255);
-            border-radius: 5px;
-            background-color: rgba(64, 169, 129, 0.598);
-            border-color: rgb(50, 12, 163);
-            text-align: left;
-        }
-
-        p{
-            gap: 5px;
-            margin: 0 auto;
-            border-radius:5px ;
-            max-width: 900px;
-            padding-top: 10px;
-            padding-right: 25px;
-            padding-left: 50px;
-            padding-bottom: 25px;
-            border: 2px;
-            border-style: solid;
-            background-color: rgba(181, 181, 181, 0.421);
-        }
 </style>
     <nav class="navbar">
         <a href="index.html">
@@ -137,27 +75,99 @@
         <a href="Draw.html">Draw</a>
     </nav>
 <br>
-<h1>Update Log</h1>
-<!--write updates here-->
-<h2>New feature! 8/27/2026</h2>
-<p>I've added a new feature to the website. A drawing canvas is now available for you all to create artwork!. Right now its pretty basic but I'm planning to add more features soon! I can work on it futher later on
+
+<div role="tooltip" class="is-top is-right" style="max-width:350px; margin: 0 auto; text-align: center; text-decoration: underline; font-weight: bolder;">Update Log</div>
+<br><br>
+    
+
+
+<!--
+<div class="window active" style="max-width: 500px; margin: 0 auto;">
+  <div class="title-bar">
+    <div class="title-bar-text"></div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body has-space">
+    <p></p>
+  </div>
+</div>
+-->
+
+
+<div class="window active" style="max-width: 500px; margin: 0 auto;">
+  <div class="title-bar">
+    <div class="title-bar-text">Design Changes 9/1/2026</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body has-space">
+    <p>You might notice that some pages are looking a bit different lately. I've been working on some design updates to make the site more visually appealing and actually have somewhat of a theme lol (idk much web design)
+        I found some free to use css libraries to use so I figured, why not not make my website old-school themed? I suppose it would be more impressive if I made all these assests myself but unfortunatly I'm not that cool. If you want
+        the css Im currently using of the Updates page, then <a href="https://khang-nd.github.io/7.css/#dropdown">click here</a>. Those with keen eyes will also notice the dropdown menu for my socials is missing on this page, Im not sure how to fix it (conflicting
+        names between the 2 css files(ok maybe I do know how to fix it but its like 1:30 am and I got school at 8:30 so yeah no time tonight but I still wanna commit something lol.)) Either way fellas, enjoy seeing the site incomplete for a little bit!
+        <br> <br> -shadi
+        <br>
+        <img src="photos/ed.png" alt="Ed">
+    </p>
+  </div>
+</div>
+<br>
+
+<div class="window active" style="max-width: 500px; margin: 0 auto;">
+  <div class="title-bar">
+    <div class="title-bar-text">New feature! 8/27/2026</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body has-space">
+    <p>I've added a new feature to the website. A drawing canvas is now available for you all to create artwork!. Right now its pretty basic but I'm planning to add more features soon! I can work on it futher later on
     to possibly add layers and a fill bucket tool. However I am already preoccupied with other things that are going on in my personal life, so I havent been able to work on the site as long as I'd like to.
     Also you may notice that my commission prices have seem to increase, that was due to me undercharging. <br> Either way, idk how long off it would be but I have begun collabration with a good friend of mine to help me bring to life a 
-    new project for the webisite which I'm hoping really turns out well. I beleive after that is done I can finally begin Military S with no reservations.   
-</p>
+    new project for the webisite which I'm hoping really turns out well. I beleive after that is done I can finally begin Military S with no reservations.   </p>
+  </div>
+</div>
+
+<br>
+
+<div class="window active" style="max-width: 500px ; margin: 0 auto;">
+  <div class="title-bar">
+    <div class="title-bar-text">Commissions are now available! 8/16/2026</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body has-space">
+    <p>Recently I've decided to start accepting commissions. Check out the Ko-fi link in the dropdown menu for inquiry! or <a href="https://www.ko-fi.com/shawtyshades">right here!</a><br><br>
+    <br>Thank you all for your support! </p>
+  </div>
+</div>
+
 <br>
 
 
-<h2>Commissions are now available! 8/16/2026</h2>
-<p>Recently I've decided to start accepting commissions. Check out the Ko-fi link in the dropdown menu for inquiry! or <a href="https://www.ko-fi.com/shawtyshades">right here!</a>.<br><br>
-    My prices start at: <br>PFP, $5<br> Half-body, $8 <br> Full-body, $10<br> Any extras like backgrounds or addiotonal characters can be added for an extra cost.<br>
-    <br>Thank you all for your support! 
-</p>
-
-
-<br>
-<h2>Tweaks - 7/30/2026</h2>
-<p>Im gonna start dating these entries.<br> It's been about a week since the site first launched, and ever since then I've made some more changes. To start off, we are now hosted on Github pages instead of cloudflare pages.
+<div class="window active" style="max-width: 500px; margin: 0 auto;">
+  <div class="title-bar">
+    <div class="title-bar-text">Tweaks - 7/30/2026</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body has-space">
+    <p>Im gonna start dating these entries.<br> It's been about a week since the site first launched, and ever since then I've made some more changes. To start off, we are now hosted on Github pages instead of cloudflare pages.
 I've been infomred that Github pages is usually regarded as better so ive decided to switch site hosting to my Github repositroy. Implementing the custom 404.html was pretty easy and much less of a headache than
 it was on cloudflare... <br><br> As for new fixes, mobile UI is pretty much OK now, its been broken for a while but I think I finally fixed it so that even mobile users can enjoy the site to the fullest.
 I've also made some less noticible fixes (the recents area on the homepage for desktop and mobile, better UI for updates page, and now the navbar size stays consistant). <br><br>
@@ -167,32 +177,64 @@ own paint js program for the site, I think that would be nifty (no promises lol)
 order of bussiness is to draw more backgrounds for the pages so they all dont match this one sunset drawing.<br>
 
 Either way this entry is getting long, so imma call it here,<br> <br>Thank You for visting <a href="https://shawtyshades.com/">shawtyshades.com</a></p>
+  </div>
+</div>
+<h2></h2>
+
 <br>
 
-
-<h2>Patches</h2>
-<p>As of writing this its is about 4:18 am. I had just got the site online yesterday and got a little feedback. I am very thankful for all the kind words when I first launched the site, it really means alot.
+<div class="window active" style="max-width: 500px; margin: 0 auto;">
+  <div class="title-bar">
+    <div class="title-bar-text">Patches</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body has-space">
+    <p>As of writing this its is about 4:18 am. I had just got the site online yesterday and got a little feedback. I am very thankful for all the kind words when I first launched the site, it really means alot.
     Right now I've been tryng to get the pdf viewer for comics up and ready. After all the essentials of this site are done, It may be time to finally put pen to paper and start production. Over the past year
     or so I've been trying to make the story and world as good as it can be. I will admit its not going to be terribly long. But I have poured my heart and soul into the writing and I will do the same for the illustrations.
-<br><br> Either way by the time you read this I have fixed/added a few things, so yay!
-</p>
+<br><br> Either way by the time you read this I have fixed/added a few things, so yay!</p>
+  </div>
+</div>
 
 <br>
     
-
-<h2> First day up</h2>
-<p>I am writing this before the site goes up for the first time, I've just bought the domain and am now preparing for launch. Quite frankly I always saw having a website to be a
+<div class="window active" style="max-width: 500px; margin: 0 auto;">
+  <div class="title-bar">
+    <div class="title-bar-text">First day up</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body has-space">
+    <p> I am writing this before the site goes up for the first time, I've just bought the domain and am now preparing for launch. Quite frankly I always saw having a website to be a
     thing of the future, but now that its here kinda makes things feel a bit more real. I guess it's one thing to have all these ideas for great projects, but it's another to actually act 
     on it. There are still a few bugs I need to work out, sorry if your a mobile user. I will work harder to get the site pleaseing on all devices, as of right now the best way to expeirence the site 
-    is on desktop.<br> <br> With all that said I hope you enjoy what little is availible at the moment. Thank you for visiting shawtyshades.com
-</p>
+    is on desktop.<br> <br> With all that said I hope you enjoy what little is availible at the moment. Thank you for visiting shawtyshades.com</p>
+  </div>
+</div>
 
 <br>
 
-    <h2>Hello World!</h2>
+<div class="window active" style="max-width: 500px; margin: 0 auto;">
+  <div class="title-bar">
+    <div class="title-bar-text">Hello World!</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body has-space">
     <p>It is July 22nd 2026. <br> When you are reading this the site will be up for the first time.<br><br> Welcome to shawtyshades.com, This is my personal webiste/art portfolio. I will create some 
-    artwork for here and on my socials, be sure to follow me there if you would like frequent updates on art/projects.</p1></p>
-
+    artwork for here and on my socials, be sure to follow me there if you would like frequent updates on art/projects.</p>
+  </div>
+</div>
 
 <div class = "footer"><link rel="shawtyshades.com" href="https://shawtyshades.com/">shawtyshades.com</div>
 

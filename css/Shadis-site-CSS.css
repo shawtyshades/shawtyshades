@@ -64,11 +64,11 @@ img {
     position: absolute;
     gap: 15px;
     left: 15px;
-    top: 300px;
+    top: 125px;
     width: 100%;
     padding:15px;
-    border: 2px solid #333;
-    background-color: rgb(72, 223, 150);
+    border: 2px solid #302d4e;
+    background-color: rgb(202, 231, 255);
     box-shadow:0 4px 10px rgba(15,15,15,0.7); 
     border-radius: 8px;
 }
