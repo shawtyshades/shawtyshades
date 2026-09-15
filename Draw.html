@@ -6,6 +6,7 @@
     <title>shawtyshades drawing</title>
     <link rel="stylesheet" href="css/drawing.css">
     <link rel="icon" type="image/x-icon" href="photos/shadiss.png">
+    <link rel="stylesheet" href="https://unpkg.com/7.css">
 </head>
 <style>
     .containter{
@@ -21,11 +22,15 @@
             margin: 0;
             padding-bottom: 20px;
         }
+
+        p1 {
+            margin-top: 10px;
+        }
 </style>
 <body>
-    <nav class="navbarcanvas">
+    <nav class="navbarcanvas" style="background-image: url(photos/navbat-taxture.png); background-size: repeat;">
         <a href="index.html">
-            <img class="navicons" src="photos/button-88x31.gif" alt="Home shortcut">
+            <img class="navicons" src="photos/88x31butn new.gif" alt="Home shortcut">
         </a>
 
         <div class="dropdown">
@@ -70,15 +75,28 @@
 <div class="overlay" id="overlay">
     <div class="popup">
         <h2>WARNING</h2>
-        <p>This drawing app may not be formatted/calibrated correctly for mobile devices (such as phones or tablets)<br> It is recommended to use a desktop browser for the best experience.<br> Also, I still have
+        <p>This drawing app may not be formatted/calibrated correctly for your mobile devices (such as phones or tablets)<br> It is recommended to use a desktop browser for the best experience.<br> Also, I still have
         to add an eraser and fill tools, so... yeah</p>
         <button class="popupCloseBtn" id="closePopup">Close</button>
     </div>
 </div>
 
 
+<div style="margin-top: 60px; width: 1050px; margin-left: auto; margin-right: auto;" class="window active" style="max-width: 300px">
+  <div class="title-bar">
+    <div class="title-bar-text">Draw something- Scroll down for Tools</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize" onclick="undo()"></button>
+      <button aria-label="Maximize" onclick="redo()"></button>
+      <button aria-label="Close" onclick="clearCanvas()"></button>
+    </div>
+  </div>
+  <div class="window-body">
     <div class="field">
         <canvas id="canvas" width="1000" height="800"></canvas>
+    </div>
+  </div>
+</div>
 
     
 <div class="tools">
@@ -102,9 +120,9 @@
             <input onInput="draw_color = this.value" type="color" style="width: 50px; height: 30px;" class="color-picker">
 
             <label for="pen-size"></label>
-                <input type="range" id="pen-size" name="pen-range" min="1" max="25" value="2" class="pen-range"
+                <input style="width: 100px;" type="range" id="pen-size" name="pen-range" min="1" max="25" value="2" class="pen-range"
                 onInput="draw_width = this.value"> 
-                <span id="pen-size-value">2</span>
+                <span id="pen-size-value"><p1>2</p1></span>
     </div>
 </div>
 

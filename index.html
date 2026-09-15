@@ -8,6 +8,7 @@
     <title>shawtyshades Home</title>
     <!--CSS link-->
     <link rel="stylesheet" href="css/Shadis-site-CSS.css">
+    <link rel="stylesheet" href="https://unpkg.com/xp.css">
     <link rel="icon" type="image/x-icon" href="photos/shadiss.png">
      <script src="https://u.widget.st/ar.js"></script>
 
@@ -20,6 +21,7 @@
             position: fixed;
             left: 10px;
             bottom: 50px;
+            border: 3px solid #000;
 
         }
         .navbar a {
@@ -30,13 +32,15 @@
             font-family: Arial, sans-serif;
         }
         body {
-            background-image: url("photos/placeholder homepage image.png");
-            background-size: cover;
+            background-image: url("photos/480p bacground.png");
+            background-size: 100%;
             background-repeat: repeat;
             background-position: center;
             height: 100vh;
             margin: 0;
             padding-bottom: 20px;
+            overflow-y: scroll;
+            padding-bottom: 10%;
         }
         /*Hover Effect*/
         .navbar a:hover {
@@ -55,15 +59,20 @@
         }
 
         p{
-            border: 2px; 
-            padding:10px;
-            border-style:solid;
-            color: aqua;
-            border-radius: 5px;
-            background-color: black;
-            border-color: rgb(50, 12, 163);
+            color: rgb(2, 5, 5);
             text-align: center;
+            font-size: medium;
             }
+
+        p1{
+            font-size: medium;
+        }
+
+        p2 {
+            font-size: large;
+            font-weight: bolder;
+            padding:9px;
+        }
 
         h4 {
             margin-top: -150px;
@@ -82,12 +91,18 @@
             color: #000;
         }
 
+                @media (max-width:832px){
+            .subnavbar {
+                padding-right: 5px;
+                padding-left: 5px;
+            }
+        }
+
 </style>
-<!--Hi mayro-->
 <body>
-    <nav class="navbar">
+    <nav class="navbar" style="background-image: url(photos/navbat-taxture.png); background-size: repeat;">
         <a href="index.html">
-            <img class="navicons" src="photos/button-88x31.gif" alt="Home shortcut">
+            <img class="navicons" src="photos/88x31butn new.gif" alt="Home shortcut">
         </a>
 
         <div class="dropdown">
@@ -129,19 +144,20 @@
     </nav>
 <div class="comicNavSpacer"></div>
     <nav class="subnavbar">
-        <a href="Gallery.html">Gallery</a>
-        <a href="Comics.html">Comics</a>
-        <a href="Draw.html">Draw</a>
+        <a href="Gallery.html"><p2>Gallery</p2></a>
+        <a href="Comics.html"><p2>Comics</p2></a>
+        <a href="Draw.html"><p2>Draw</p2></a>
+        <a href="About.html"><p2>About Me</p2></a>
     </nav>
 
-<img class="logo" src="photos/buttons/better site logo.png" alt="temp logo">
+<img class="logo" src="photos/new site logo sprite.png" alt="temp logo">
 <div class="box">
 
     <!--updates box here-->
 <div class="updates">
-    <a href="Updates.html"><h3>Updates</h3></a>
+    <a href="Updates.html"><p2>Updates Page:</p2></a><br>
     <p1>You might notice that some pages are looking a bit different lately. I've been working on some design updates to make the site more visually appealing and actually have somewhat of a theme lol (idk much web design)
-        I found some free to use css libraries to use so I figured, why not not make my website old-school themed?
+        I found some free to use css libraries to use so I figured, why not not make my website old-school themed?...
     <a href="Updates.html"><h6>READ MORE ></h6></a> </p1>
 </div>
 
@@ -152,25 +168,44 @@
 </div> -->
 
 <!--main box here-->
-<p>Hello, I am shawtyshades (also known as shadi), and this is my website.
+
+<div class="window">
+  <div class="title-bar">
+    <div class="title-bar-text">Welcome to the shawtyshades website!</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body">
+      <p>Hello, I am shawtyshades (also known as shadi), and this is my website.
     I am hoping to use this as a easy way to view all my artwork and future projects (also it's fun to make a site).
     Around 2027 I plan on releasing a project of mine I've been working on for a while so bear with me.
     <br>
-    ------
-    <a href="https://www.ko-fi.com/shawtyshades">Commission me on Ko-fi</a>
+    --------------------------------------------------------
+    <a href="https://www.ko-fi.com/shawtyshades" target="_blank">Commission me on Ko-fi</a>
 </p>
+    </pre>
+  </div>
 </div>
+
+
+
+
+</div>
+<br><br>
 <!--right here will be most recent artwork and most recent comics-->
 <div class="recent-container">
     <div class="thumb-container">
-        <h4>Most recent Artwork</h4>
+        <h4 style="text-align: left; color: #a7a7a7;"><p1>Most recent Artwork</p1></h4>
     <a href="Gallery.html">
-        <img src="photos/artsstuff.png" class="thumb" alt="new art">
+        <img src="photos/IMG_0086.png" class="thumb" alt="new art">
     </a>
     </div>
 
-    <div class="chapter">
-        <h4>Most recent Chapter</h4>
+    <div class="thumb-container">
+        <h4 style="text-align: center; color: #a7a7a7;"><p1>Most recent Chapter</p1></h4>
     <a href="Comics.html">
         <img src="photos/placeholdeer.png" class="thumb" alt="new chapter">
     </a>

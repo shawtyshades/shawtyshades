@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>shawtyshades Gallery</title>
 <link rel="icon" type="image/x-icon" href="photos/shadiss.png">
+<link rel="stylesheet" href="https://unpkg.com/98.css">
 <!--CSS link-->
     <link rel="stylesheet" href="css/Shadis-site-CSS.css">
 </head>
@@ -18,8 +19,8 @@
             font-family: Arial, sans-serif;
         }
         body { 
-            background-image: url("photos/gallery background.png");
-            background-size: cover;
+            background-image: url("photos/star background.gif");
+            background-size: repeat;
             background-repeat: repeat;
             background-position: center;
             height: 100vh;
@@ -49,13 +50,30 @@
 
         }
 
+        p1 {
+            font-size: small;
+        }
+
+                p2 {
+            font-size: large;
+            font-weight: bolder;
+            padding:9px;
+        }
+
+                @media (max-width:832px){
+            .subnavbar {
+                padding-right: 5px;
+                padding-left: 5px;
+            }
+        }
+
 </style>
 
 <body>
 
-    <nav class="navbar">
+    <nav class="navbar" style="background-image: url(photos/navbat-taxture.png); background-size: repeat;">
         <a href="index.html">
-            <img class="navicons" src="photos/button-88x31.gif" alt="Home shortcut">
+            <img class="navicons" src="photos/88x31butn new.gif" alt="Home shortcut">
         </a>
 
         <div class="dropdown">
@@ -96,20 +114,20 @@
     </nav>
 <div class="comicNavSpacer"></div>
     <nav class="subnavbar">
-        <a href="Gallery.html">Gallery</a>
-        <a href="Comics.html">Comics</a>
-        <a href="Draw.html">Draw</a>
+        <a href="Gallery.html"><p2>Gallery</p2></a>
+        <a href="Comics.html"><p2>Comics</p2></a>
+        <a href="Draw.html"><p2>Draw</p2></a>
+        <a href="About.html"><p2>About Me</p2></a>
         
     </nav>
     
      <div class="gallery">
         <!--add pics here-->
-        
+        <img loading="lazy" src="photos/IMG_0086.png" class="thumb">
         <img loading="lazy" src="photos/artsstuff.png" class="thumb">
         <img loading="lazy" src="photos/END OF JERM.png" class="thumb">
         <img loading="lazy" src="photos/thingy scetion.png" class="thumb">
         <img loading="lazy" src="photos/sowmwhatever.png" class="thumb">
-        <img loading="lazy" src="photos/poedwjsfpoi.png" class="thumb">
         <img loading="lazy" src="photos/magmar.png" class="thumb">
         <img loading="lazy" src="photos/sumiu.png" class="thumb">
         <img loading="lazy" src="photos/edds.png"  class="thumb">
@@ -142,19 +160,19 @@
 
     <div class="toolbar">
         <button id="zoomOut">
-            <img src="photos/buttons/zoomout.png" width="25">
+            <img src="photos/buttons/zoomoutpixel.png" width="25">
         </button>
 
         <button id="zoomIn">
-            <img src="photos/buttons/zoomin2.png" width="25">
+            <img src="photos/buttons/zoominpixel.png" width="25">
         </button>
 
         <button id="prev">
-            <img src="photos/buttons/prev arrow.png" width="25">
+            <img style="transform: scaleX(-1);" src="photos/buttons/new arrow right.png" width="25" >
         </button>
 
         <button id="next">
-            <img src="photos/buttons/next arrow.png" width="25">
+            <img src="photos/buttons/new arrow right.png" width="25">
         </button>
     </div>
         <button id="reset">

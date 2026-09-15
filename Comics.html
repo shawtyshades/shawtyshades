@@ -8,6 +8,7 @@
 <link rel="icon" type="image/x-icon" href="photos/shadiss.png">
 <!--CSS link-->
     <link rel="stylesheet" href="css/Shadis-site-CSS.css">
+        <link rel="stylesheet" href="https://unpkg.com/7.css">
 
 </head>
 <style>
@@ -20,7 +21,7 @@
             font-family: Arial, sans-serif;
         }
         body { 
-            background-image: url("photos/clouds.png");
+            /*background-image: url("photos/clouds.png");*/
             background-size: cover;
             background-repeat: repeat;
             background-position: center;
@@ -37,19 +38,12 @@
         }
 
         h1{
-            border-top-style: dashed ;
-            border-bottom-style:dashed ;
-            border-left-style:solid ;
-            border-right-style:solid ;
-
-            color: rgb(119, 119, 230);
+            color:aliceblue;
             text-align: center;
-            border-color: rgb(222, 51, 168);
-            background-color: rgb(13, 0, 58);
-            margin-left: 250px;
-            margin-right: 250px;
-            box-shadow: 46px 23px 19px 6px rgba(0, 0, 0, 0.37);
-            border-radius: 10px;
+            background-image: url("photos/navbat-taxture.png");
+            background-size: contain;
+            background-repeat: repeat;
+            background-position: center;
         }
         span{
             color: azure;
@@ -59,21 +53,6 @@
             border-radius: 4px;
         }
         @media (max-width:1432px) {
-            h1{
-            border-top-style: dashed ;
-            border-bottom-style:dashed ;
-            border-left-style:solid ;
-            border-right-style:solid ;
-
-            color: rgb(119, 119, 230);
-            text-align: center;
-            border-color: rgb(222, 51, 168);
-            background-color: rgb(13, 0, 58);
-            margin-left: 50px;
-            margin-right: 50px;
-            box-shadow: 46px 23px 19px 6px rgba(0, 0, 0, 0.37);
-            border-radius: 10px;
-            }
 
             chapterList{
                     display: flex;
@@ -85,12 +64,33 @@
             
         }
 
+        p1 {
+            font-size: small;
+        }
+
+        p2 {
+            font-size: large;
+            font-weight: bolder;
+            padding:9px;
+        }
+
+                @media (max-width:832px){
+            .subnavbar {
+                padding-right: 5px;
+                padding-left: 5px;
+            }
+
+            body{
+                margin-bottom: 30px;
+            }
+        }
+
 </style>
 <body>
 
-    <nav class="navbar">
+    <nav class="navbar" style="background-image: url(photos/navbat-taxture.png); background-size: repeat;">
         <a href="index.html">
-            <img class="navicons" src="photos/button-88x31.gif" alt="Home shortcut">
+            <img class="navicons" src="photos/88x31butn new.gif" alt="Home shortcut">
         </a>
 
         <div class="dropdown">
@@ -131,9 +131,10 @@
     </nav>
     <div class="comicNavSpacer"></div>
     <nav class="subnavbar">
-        <a href="Gallery.html">Gallery</a>
-        <a href="Comics.html">Comics</a>
-        <a href="Draw.html">Draw</a>
+        <a href="Gallery.html"><p2>Gallery</p2></a>
+        <a href="Comics.html"><p2>Comics</p2></a>
+        <a href="Draw.html"><p2>Draw</p2></a>
+        <a href="About.html"><p2>About Me</p2></a>
         
     </nav>
 
@@ -141,7 +142,7 @@
 
 
 <!--h1 will be sorted by series-->
-    <h1>Comics demo</h1>
+    <h1 style="border-bottom: 2px solid #000;">Military-S</h1>
 
 <div id="chapterList">
 <!--add pdfs here once a chapter is done-->
@@ -152,6 +153,10 @@
 
 
 </div>
+
+    <h1 style="border-bottom: 2px solid #000;">work in progress</h1>
+
+
 
 
 <!--toolbar for the reader-->

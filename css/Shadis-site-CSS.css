@@ -70,7 +70,7 @@ img {
     border: 2px solid #302d4e;
     background-color: rgb(202, 231, 255);
     box-shadow:0 4px 10px rgba(15,15,15,0.7); 
-    border-radius: 8px;
+    border-radius: 0;
 }
 
 .container {
@@ -89,9 +89,6 @@ img {
     .thumb-contianer:last-child{
         margin-bottom: 20px;
     }
-
-
-
 }
 
 @media (max-width:1432px) {
@@ -167,7 +164,6 @@ a img {
 
 .navbar {
     list-style: none;
-    background-color: rgb(3, 0, 45);
     overflow: visible;
     position: fixed;
     top: 0;
@@ -179,6 +175,7 @@ a img {
     display: flex;
     padding: 1rem;
     box-sizing: border-box;
+    z-index: 9000;
 }
 
 .navbar li{
@@ -197,9 +194,9 @@ a img {
     height:40px;
     display:flex;
     align-items:center;
-    justify-content:left;
     justify-content: space-between;
     padding:0 30%;
+    border-bottom: 3px solid #332b42;
     background-color:rgba(40, 0, 68, 0.789);
     box-shadow:0 4px 10px rgba(15,15,15,0.7); 
 }
@@ -366,7 +363,7 @@ a img {
     width:200px;
     height: 200px;
     overflow: hidden;
-    border-radius: 10px ;
+    border-radius: 1px ;
     box-shadow: 0 8px 15px rgba(0,0,0,0.25);
     margin: 0 auto;
 }
@@ -387,12 +384,15 @@ a img {
 
 .thumb{
     display: block;
-    border: 3px solid rgb(27, 15, 65);
+    border-top: 3px solid rgb(149, 129, 216);
+    border-bottom: 3px solid #332b42;
+    border-left: 3px solid #5900ff;
+    border-right: 3px solid #5900ff;
     width: 200px;
     height: 200px;
     object-fit: cover;
     cursor:pointer;
-    border-radius:8px;
+    border-radius: 1px;
     transition:transform .2s ease;
     box-shadow: 0 8px 15px rgba(0,0,0,0.25);
 }
@@ -508,7 +508,7 @@ a img {
     border: 2px solid rgb(117, 67, 216);
     background-color: rgb(57, 57, 57);
     z-index: 1001;
-    border-radius: 10px;
+    border-radius: 3px;
     margin: 0 auto;
 
 
@@ -518,7 +518,7 @@ a img {
     background: #ccb3ff78;
     color: rgb(13,0,58);
     border: solid rgb(74, 68, 158);
-    border-radius: 5px;
+    border-radius: 3px;
     padding: 3px;
     width: 45px;
     height: 45px;
@@ -557,8 +557,11 @@ a img {
     width: 180px;
     height: 250px;
     object-fit: cover;
-    border: 3px solid rgb(62, 95, 243);
-    border-radius: 8px;
+    border-top: 3px solid rgb(62, 95, 243);
+    border-left: 3px solid #4000b8;
+    border-right: 3px solid #4000b8;
+    border-bottom: 3px solid #1e0057;
+    border-radius: 1px;
 }
 
 
@@ -575,7 +578,7 @@ a img {
     min-width: 55px;
     min-height: 50px;
     background: rgb(9, 170, 194);
-    border-radius: 15px;
+    border-radius: 2px;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -706,6 +709,6 @@ button {
 }
 
 h6{
-    color: #00cdcd;
+    color: #060892;
     text-align: center;
 }

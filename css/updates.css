@@ -159,6 +159,7 @@ a img {
     display: flex;
     padding: 1rem;
     box-sizing: border-box;
+    z-index: 9000;
 }
 
 .navbar li{
@@ -177,11 +178,12 @@ a img {
     height:40px;
     display:flex;
     align-items:center;
-    justify-content:left;
     justify-content: space-between;
     padding:0 30%;
+    border-bottom: 3px solid #332b42;
     background-color:rgba(40, 0, 68, 0.789);
     box-shadow:0 4px 10px rgba(15,15,15,0.7); 
+    
 }
 
 
